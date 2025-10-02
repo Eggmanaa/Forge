@@ -21,11 +21,23 @@ export interface Grade {
 export const forgeData = {
   mission: "FORGE integrates affective neuroscience, attachment theory, and Christian Theology to foster emotional resilience, relational intelligence, and Christ-centered leadership.",
   vision: "Help students feel deeply, think critically, relate compassionately, and lead courageously, empowering them to live out the Gospel through emotional maturity and personal virtue.",
+  overview: "FORGE is a comprehensive Social Emotional Learning (SEL) and leadership formation curriculum delivered to all students in grades 9–12 at Bishop Diego High School. Developed and facilitated by the school's Personal Counselor/Dean of Students, FORGE integrates affective neuroscience, attachment theory, and Christian Theology to foster emotional resilience, relational intelligence, and Christ-centered leadership.",
   alignment: {
-    casel: "Self-Awareness, Self-Management, Social Awareness, Relationship Skills, and Responsible Decision-Making",
-    nsbecs: "Integrates Catholic Social Teaching and provides developmentally appropriate character formation",
-    accreditation: "Contributes to WCEA & WASC accreditation by delivering standards-aligned SEL curriculum"
-  }
+    casel: {
+      title: "CASEL's Five Core Competencies",
+      description: "Each module supports the development of Self-Awareness, Self-Management, Social Awareness, Relationship Skills, and Responsible Decision-Making."
+    },
+    nsbecs: {
+      title: "National Standards & Benchmarks for Effective Catholic Schools (NSBECS)",
+      description: "The program integrates Catholic Social Teaching and provides developmentally appropriate character formation."
+    },
+    accreditation: {
+      title: "WCEA & WASC Accreditation Criteria",
+      description: "FORGE contributes to accreditation by delivering a standards-aligned SEL curriculum integrated into core Theology classes, embedding Catholic identity, and cultivating a trauma-informed school environment."
+    }
+  },
+  programImpact: "FORGE provides students with more than just emotional tools; it offers a theological and psychological framework for understanding themselves and their role in the world. By developing emotional literacy and self-regulation, the program enhances academic readiness and cultivates a more empathetic, trauma-informed school climate. Ultimately, FORGE prepares students to become servant-leaders and emotionally intelligent disciples who can live out the Gospel in a multicultural world.",
+  catholicFoundation: "Grounded in the Catholic vision of integral formation, FORGE is designed to form the whole person—mind, heart, and spirit. The curriculum directly supports key educational standards by embedding theological principles and promoting measurable growth in students' affective and interpersonal skills."
 };
 
 export const curriculumData: Grade[] = [

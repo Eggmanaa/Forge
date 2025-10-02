@@ -262,34 +262,137 @@ app.get('/about', (c) => {
         </div>
       </section>
 
-      {/* Mission & Vision */}
+      {/* Program Overview */}
       <section className="section section-white">
         <div className="container">
+          <h2>Program Overview</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">{forgeData.overview}</p>
+          
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
             <div>
-              <h2>Mission</h2>
+              <h3>Mission</h3>
               <p>{forgeData.mission}</p>
             </div>
             <div>
-              <h2>Vision</h2>
+              <h3>Vision</h3>
               <p>{forgeData.vision}</p>
             </div>
           </div>
           
-          <h2>Standards Alignment</h2>
+          <div style="background-color: var(--forge-cream); padding: 2rem; border-radius: var(--border-radius-large); border-left: 4px solid var(--primary-color); margin: 2rem 0;">
+            <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Catholic Foundation</h3>
+            <p>{forgeData.catholicFoundation}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Standards Alignment */}
+      <section className="section section-light">
+        <div className="container">
+          <h2 className="section-title">Mission & Standards Alignment</h2>
           <div className="about-grid">
             <div className="about-card">
-              <h3>CASEL Framework</h3>
-              <p>{forgeData.alignment.casel}</p>
+              <h3>{forgeData.alignment.casel.title}</h3>
+              <p>{forgeData.alignment.casel.description}</p>
             </div>
             <div className="about-card">
-              <h3>NSBECS Standards</h3>
-              <p>{forgeData.alignment.nsbecs}</p>
+              <h3>{forgeData.alignment.nsbecs.title}</h3>
+              <p>{forgeData.alignment.nsbecs.description}</p>
             </div>
             <div className="about-card">
-              <h3>Accreditation</h3>
-              <p>{forgeData.alignment.accreditation}</p>
+              <h3>{forgeData.alignment.accreditation.title}</h3>
+              <p>{forgeData.alignment.accreditation.description}</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Curriculum Scope & Sequence */}
+      <section className="section section-white">
+        <div className="container">
+          <h2 className="section-title">Curricular Scope & Sequence</h2>
+          <p style="text-align: center; margin-bottom: 3rem; font-style: italic;">The following framework outlines the year-over-year progression of the FORGE curriculum:</p>
+          
+          <div style="overflow-x: auto; margin: 2rem 0;">
+            <table style="width: 100%; border-collapse: collapse; background-color: var(--background-white); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--box-shadow);">
+              <thead>
+                <tr style="background-color: var(--primary-color); color: var(--text-light);">
+                  <th style="padding: 1rem; text-align: left; font-weight: bold;">Grade</th>
+                  <th style="padding: 1rem; text-align: left; font-weight: bold;">Module Title</th>
+                  <th style="padding: 1rem; text-align: left; font-weight: bold;">Description</th>
+                  <th style="padding: 1rem; text-align: left; font-weight: bold;">CASEL Focus</th>
+                  <th style="padding: 1rem; text-align: left; font-weight: bold;">CST Lens</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 1rem; font-weight: bold; color: var(--primary-color); vertical-align: top;">9</td>
+                  <td style="padding: 1rem; vertical-align: top;"><strong>Living Life in Color</strong></td>
+                  <td style="padding: 1rem; vertical-align: top;">Introduces the foundational concept that emotions are non-judgmental signals that lead to adaptive actions. Students learn to identify core emotions (anger, sadness, fear, joy), their corresponding signals, and their functions using the Zones of Regulation framework.</td>
+                  <td style="padding: 1rem; vertical-align: top;">Self-Awareness, Self-Management</td>
+                  <td style="padding: 1rem; vertical-align: top;">Dignity of the Human Person</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color); background-color: var(--forge-cream);">
+                  <td style="padding: 1rem; vertical-align: top;"></td>
+                  <td style="padding: 1rem; vertical-align: top;"><strong>The Time-Traveling Emotional Brain</strong></td>
+                  <td style="padding: 1rem; vertical-align: top;">Explains how the emotional brain connects present sensory experiences to the past, creating emotional "triggers". Students explore the concepts of being "flooded" by past emotions and how unresolved "core memories" can impact present behavior and well-being.</td>
+                  <td style="padding: 1rem; vertical-align: top;">Self-Awareness, Social Awareness</td>
+                  <td style="padding: 1rem; vertical-align: top;">Healing Community</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 1rem; font-weight: bold; color: var(--primary-color); vertical-align: top;">10</td>
+                  <td style="padding: 1rem; vertical-align: top;"><strong>Understanding and Managing Anxiety</strong></td>
+                  <td style="padding: 1rem; vertical-align: top;">Provides psychoeducation on anxiety, distinguishing it from fear and stress. Students identify the physical sensations of anxiety, learn about the anxiety cycle and safety behaviors, and practice "Palm Tree Coping" skills to respond to triggers without avoidance.</td>
+                  <td style="padding: 1rem; vertical-align: top;">Self-Management, Responsible Decision-Making</td>
+                  <td style="padding: 1rem; vertical-align: top;">Option for the Vulnerable</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color); background-color: var(--forge-cream);">
+                  <td style="padding: 1rem; vertical-align: top;"></td>
+                  <td style="padding: 1rem; vertical-align: top;"><strong>Verbal Villains & Empathy</strong></td>
+                  <td style="padding: 1rem; vertical-align: top;">Equips students to recognize and replace communication patterns that block empathy ("Verbal Villains"). The module introduces and practices the "1, 2, 3's of Empathy"—Mirroring, Validation, and Empathy—to foster deeper connection and understanding.</td>
+                  <td style="padding: 1rem; vertical-align: top;">Social Awareness, Relationship Skills</td>
+                  <td style="padding: 1rem; vertical-align: top;">Call to Community</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 1rem; font-weight: bold; color: var(--primary-color); vertical-align: top;">11</td>
+                  <td style="padding: 1rem; vertical-align: top;"><strong>Relating Through Differences</strong></td>
+                  <td style="padding: 1rem; vertical-align: top;">Explores the 7 Motivational Gifts of the Father framework as a tool for understanding personal communication styles. Grounded in Romans 12:6-8, this session helps students identify their own personality-based gifts (Prophecy, Service, Teaching, Encouragement, Giving, Leadership, and Mercy) and learn to bridge communication gaps with others.</td>
+                  <td style="padding: 1rem; vertical-align: top;">Social Awareness, Responsible Decision-Making</td>
+                  <td style="padding: 1rem; vertical-align: top;">Solidarity</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color); background-color: var(--forge-cream);">
+                  <td style="padding: 1rem; vertical-align: top;"></td>
+                  <td style="padding: 1rem; vertical-align: top;"><strong>9 Temperaments</strong></td>
+                  <td style="padding: 1rem; vertical-align: top;">Explains the nine dimensions of temperament as the "how" of personality—our natural way of reacting to environmental stimuli. Students identify their unique temperament profile to better understand their internal reactions.</td>
+                  <td style="padding: 1rem; vertical-align: top;">Self-Awareness, Responsible Decision-Making</td>
+                  <td style="padding: 1rem; vertical-align: top;">Subsidiarity</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                  <td style="padding: 1rem; font-weight: bold; color: var(--primary-color); vertical-align: top;">12</td>
+                  <td style="padding: 1rem; vertical-align: top;"><strong>Healthy Character I: Boundaries</strong></td>
+                  <td style="padding: 1rem; vertical-align: top;">Defines character as the capacity to face reality and introduces the Character Structure of Separation—the ability to be distinct from others and say "no". Students learn to establish healthy boundaries by taking responsibility for their own emotions, choices, and limits.</td>
+                  <td style="padding: 1rem; vertical-align: top;">Relationship Skills, Responsible Decision-Making</td>
+                  <td style="padding: 1rem; vertical-align: top;">Rights & Responsibilities</td>
+                </tr>
+                <tr style="background-color: var(--forge-cream);">
+                  <td style="padding: 1rem; vertical-align: top;"></td>
+                  <td style="padding: 1rem; vertical-align: top;"><strong>Healthy Character II: Facing Reality</strong></td>
+                  <td style="padding: 1rem; vertical-align: top;">Focuses on the Character Structure of Integration—the ability to embrace both positive and negative realities about oneself and life. This module teaches students to move beyond an "all-or-nothing" mindset by integrating painful and redemptive experiences with hope and self-compassion.</td>
+                  <td style="padding: 1rem; vertical-align: top;">Self-Management, Social Awareness</td>
+                  <td style="padding: 1rem; vertical-align: top;">Hope & Redemption</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Program Impact */}
+      <section className="section section-light">
+        <div className="container">
+          <h2 className="section-title">Program Impact</h2>
+          <div style="background-color: var(--background-white); padding: 2.5rem; border-radius: var(--border-radius-large); box-shadow: var(--box-shadow); text-align: center;">
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 0;">{forgeData.programImpact}</p>
           </div>
         </div>
       </section>
