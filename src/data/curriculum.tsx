@@ -150,7 +150,7 @@ export const curriculumData: Grade[] = [
         description: "Explores the 7 Motivational Gifts of the Father framework as a tool for understanding personal communication styles. Grounded in Romans 12:6-8, this session helps students identify their own personality-based gifts (Prophecy, Service, Teaching, Encouragement, Giving, Leadership, and Mercy) and learn to bridge communication gaps with others.",
         caselFocus: ["Social Awareness", "Responsible Decision-Making"],
         cstLens: "Solidarity",
-        powerpointFile: "/materials/grade11/Relating_Through_Differences_ACCESS_NOTE.txt",
+        powerpointFile: "/materials/grade11/Relating_Through_Differences.txt",
         audioFile: "/materials/grade11/Relating_Through_Differences.mp3",
         objectives: [
           "Understand the 7 Motivational Gifts framework",

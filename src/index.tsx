@@ -156,7 +156,7 @@ app.get('/grade/:gradeNum', (c) => {
         <div className="container">
           <h2 className="section-title">Course Modules</h2>
           {gradeData.lessons.map(lesson => (
-            <div key={lesson.id} className={`lesson-card ${lesson.powerpointFile.includes('ACCESS_NOTE') ? 'access-note-card' : ''}`}>
+            <div key={lesson.id} className="lesson-card">
               <div className="lesson-header">
                 <h3 className="lesson-title">{lesson.title}</h3>
                 <div className="lesson-meta">
@@ -201,7 +201,7 @@ app.get('/grade/:gradeNum', (c) => {
               )}
               
               <div className="lesson-actions">
-                {lesson.powerpointFile.includes('ACCESS_NOTE') ? (
+                {lesson.powerpointFile.endsWith('.txt') ? (
                   <a href={lesson.powerpointFile} className="download-btn access-note-btn" download>
                     📋 Access Information
                   </a>
