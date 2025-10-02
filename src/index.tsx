@@ -286,8 +286,39 @@ app.get('/about', (c) => {
         </div>
       </section>
 
-      {/* Standards Alignment */}
+      {/* Delivery Model */}
       <section className="section section-light">
+        <div className="container">
+          <h2 className="section-title">Delivery Model</h2>
+          <div style="background-color: var(--background-white); padding: 2.5rem; border-radius: var(--border-radius-large); box-shadow: var(--box-shadow);">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+              <div>
+                <h4 style="color: var(--primary-color); margin-bottom: 0.5rem; font-size: 1.1rem;">🎯 Target Audience</h4>
+                <p style="margin: 0; font-weight: 500;">{forgeData.deliveryModel.targetAudience}</p>
+              </div>
+              <div>
+                <h4 style="color: var(--primary-color); margin-bottom: 0.5rem; font-size: 1.1rem;">📅 Frequency</h4>
+                <p style="margin: 0; font-weight: 500;">{forgeData.deliveryModel.frequency}</p>
+              </div>
+              <div>
+                <h4 style="color: var(--primary-color); margin-bottom: 0.5rem; font-size: 1.1rem;">🏫 Setting</h4>
+                <p style="margin: 0; font-weight: 500;">{forgeData.deliveryModel.setting}</p>
+              </div>
+              <div>
+                <h4 style="color: var(--primary-color); margin-bottom: 0.5rem; font-size: 1.1rem;">👥 Facilitator</h4>
+                <p style="margin: 0; font-weight: 500;">{forgeData.deliveryModel.facilitator}</p>
+              </div>
+            </div>
+            <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+              <h4 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.1rem;">🎭 Format</h4>
+              <p style="margin: 0; font-size: 1.05rem; line-height: 1.6;">{forgeData.deliveryModel.format}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Standards Alignment */}
+      <section className="section section-white">
         <div className="container">
           <h2 className="section-title">Mission & Standards Alignment</h2>
           <div className="about-grid">

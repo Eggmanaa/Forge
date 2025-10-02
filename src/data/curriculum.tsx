@@ -37,7 +37,14 @@ export const forgeData = {
     }
   },
   programImpact: "FORGE provides students with more than just emotional tools; it offers a theological and psychological framework for understanding themselves and their role in the world. By developing emotional literacy and self-regulation, the program enhances academic readiness and cultivates a more empathetic, trauma-informed school climate. Ultimately, FORGE prepares students to become servant-leaders and emotionally intelligent disciples who can live out the Gospel in a multicultural world.",
-  catholicFoundation: "Grounded in the Catholic vision of integral formation, FORGE is designed to form the whole person—mind, heart, and spirit. The curriculum directly supports key educational standards by embedding theological principles and promoting measurable growth in students' affective and interpersonal skills."
+  catholicFoundation: "Grounded in the Catholic vision of integral formation, FORGE is designed to form the whole person—mind, heart, and spirit. The curriculum directly supports key educational standards by embedding theological principles and promoting measurable growth in students' affective and interpersonal skills.",
+  deliveryModel: {
+    targetAudience: "All students (Grades 9–12)",
+    frequency: "Two 45-minute modules per grade level each academic year",
+    setting: "Theology class periods",
+    facilitator: "Personal Counselor/Dean of Students",
+    format: "Interactive lessons featuring small-group discussion, video clips, role-playing, and somatic-based SEL practices"
+  }
 };
 
 export const curriculumData: Grade[] = [
