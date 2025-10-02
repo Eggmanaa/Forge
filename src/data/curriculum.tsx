@@ -41,6 +41,7 @@ export const curriculumData: Grade[] = [
         caselFocus: ["Self-Awareness", "Self-Management"],
         cstLens: "Dignity of the Human Person",
         powerpointFile: "/materials/grade9/Living_Life_in_Color.pptx",
+        audioFile: "/materials/grade9/Living_Life_in_Color.mp3",
         objectives: [
           "Understand emotions as non-judgmental signals",
           "Identify core emotions and their functions",
@@ -61,6 +62,7 @@ export const curriculumData: Grade[] = [
         caselFocus: ["Self-Awareness", "Social Awareness"],
         cstLens: "Healing Community",
         powerpointFile: "/materials/grade9/The_Time_Traveling_Emotional_Brain.pptx",
+        audioFile: "/materials/grade9/The_Time_Traveling_Emotional_Brain.mp3",
         objectives: [
           "Understand how past experiences affect present reactions",
           "Identify personal emotional triggers",
@@ -88,6 +90,7 @@ export const curriculumData: Grade[] = [
         caselFocus: ["Self-Management", "Responsible Decision-Making"],
         cstLens: "Option for the Vulnerable",
         powerpointFile: "/materials/grade10/Understanding_and_Managing_Anxiety.pptx",
+        audioFile: "/materials/grade10/Understanding_and_Managing_Anxiety.mp3",
         objectives: [
           "Distinguish anxiety from fear and stress",
           "Identify physical sensations of anxiety",
@@ -108,6 +111,7 @@ export const curriculumData: Grade[] = [
         caselFocus: ["Social Awareness", "Relationship Skills"],
         cstLens: "Call to Community",
         powerpointFile: "/materials/grade10/Verbal_Villains_and_Empathy.pptx",
+        audioFile: "/materials/grade10/Verbal_Villains_and_Empathy.mp3",
         objectives: [
           "Identify communication patterns that block empathy",
           "Learn the 1, 2, 3's of Empathy framework",
@@ -135,6 +139,7 @@ export const curriculumData: Grade[] = [
         caselFocus: ["Social Awareness", "Responsible Decision-Making"],
         cstLens: "Solidarity",
         powerpointFile: "/materials/grade11/Relating_Through_Differences_ACCESS_NOTE.txt",
+        audioFile: "/materials/grade11/Relating_Through_Differences.mp3",
         objectives: [
           "Understand the 7 Motivational Gifts framework",
           "Identify personal communication style and gifts",
@@ -155,6 +160,7 @@ export const curriculumData: Grade[] = [
         caselFocus: ["Self-Awareness", "Responsible Decision-Making"],
         cstLens: "Subsidiarity",
         powerpointFile: "/materials/grade11/9_Temperaments.pptx",
+        audioFile: "/materials/grade11/9_Temperaments.mp3",
         objectives: [
           "Understand temperament as natural reaction patterns",
           "Identify personal temperament profile",
@@ -182,6 +188,7 @@ export const curriculumData: Grade[] = [
         caselFocus: ["Relationship Skills", "Responsible Decision-Making"],
         cstLens: "Rights & Responsibilities",
         powerpointFile: "/materials/grade12/Healthy_Character_Boundaries.pptx",
+        audioFile: "/materials/grade12/Healthy_Character_Boundaries.mp3",
         objectives: [
           "Define character as capacity to face reality",
           "Understand the Character Structure of Separation",
@@ -202,6 +209,7 @@ export const curriculumData: Grade[] = [
         caselFocus: ["Self-Management", "Social Awareness"],
         cstLens: "Hope & Redemption",
         powerpointFile: "/materials/grade12/Healthy_Character_Facing_Reality.pptx",
+        audioFile: "/materials/grade12/Healthy_Character_Facing_Reality.mp3",
         objectives: [
           "Understand the Character Structure of Integration",
           "Embrace both positive and negative realities",

@@ -156,7 +156,7 @@ app.get('/grade/:gradeNum', (c) => {
         <div className="container">
           <h2 className="section-title">Course Modules</h2>
           {gradeData.lessons.map(lesson => (
-            <div key={lesson.id} className={`lesson-card ${lesson.powerpointFile.includes('ACCESS_NOTE') ? 'access-note-card' : ''}`}>
+            <div key={lesson.id} className="lesson-card">
               <div className="lesson-header">
                 <h3 className="lesson-title">{lesson.title}</h3>
                 <div className="lesson-meta">
@@ -185,29 +185,13 @@ app.get('/grade/:gradeNum', (c) => {
                 </ul>
               </div>
               
-              {lesson.audioFile && (
-                <div className="audio-player">
-                  <div className="audio-title">🎵 Audio Summary</div>
-                  <audio controls preload="metadata">
-                    <source src={lesson.audioFile} type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                  </audio>
-                  <div className="audio-controls">
-                    <a href={lesson.audioFile} className="download-btn audio-btn" download>
-                      Download Audio
-                    </a>
-                  </div>
-                </div>
-              )}
-              
               <div className="lesson-actions">
-                {lesson.powerpointFile.includes('ACCESS_NOTE') ? (
-                  <a href={lesson.powerpointFile} className="download-btn access-note-btn" download>
-                    📋 Access Information
-                  </a>
-                ) : (
-                  <a href={lesson.powerpointFile} className="download-btn" download>
-                    📄 Download PowerPoint
+                <a href={lesson.powerpointFile} className="download-btn" download>
+                  📄 Download PowerPoint
+                </a>
+                {lesson.audioFile && (
+                  <a href={lesson.audioFile} className="download-btn audio-btn" download>
+                    🎵 Download Audio
                   </a>
                 )}
               </div>
