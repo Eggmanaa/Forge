@@ -12,7 +12,7 @@
 
 ## URLs
 - **Development**: https://3000-ixxso9nagivo4ularyebx-6532622b.e2b.dev
-- **Production**: https://forge-9xl.pages.dev (Cloudflare Pages)
+- **Production**: https://forge-curriculum.pages.dev (Cloudflare Pages)
 - **GitHub**: https://github.com/Eggmanaa/Forge
 
 ## Data Architecture
@@ -39,11 +39,11 @@
 2. **Healthy Character II: Facing Reality**: Character Structure of Integration and embracing realities
 
 ## User Guide
-1. **Navigate by Grade Level**: Use the main navigation or homepage grade cards to access specific grade levels
+1. **Navigate by Grade Level**: Use the main navigation (About is now positioned before grade levels) or homepage grade cards to access specific grade levels
 2. **Browse Lessons**: Each grade page displays all course modules with detailed descriptions
 3. **Access Materials**: Download PowerPoint presentations directly from lesson cards
-4. **Learn About Framework**: Visit the About page to understand CASEL alignment and Catholic Social Teaching integration
-5. **Audio Summaries**: Coming soon - audio files will be added to complement PowerPoint materials
+4. **Listen to Audio Summaries**: Each lesson now includes an integrated audio player with streaming and download options
+5. **Learn About Framework**: Visit the About page to understand CASEL alignment and Catholic Social Teaching integration
 
 ## Technical Details
 - **Platform**: Cloudflare Pages with Hono framework
@@ -66,8 +66,14 @@
 - Brand colors: Deep burgundy (#8B1538), gold (#DAA520), charcoal (#36454F), and cream (#F5F5DC)
 - Mobile-responsive design ensures accessibility across devices
 
+## Recent Updates (October 2024)
+- ✅ **Audio Integration Complete**: All 8 lesson audio summaries now included with streaming players
+- ✅ **Improved Navigation**: About section moved before grade levels for better user flow
+- ✅ **Enhanced Lesson Cards**: Integrated audio players with download options
+- ✅ **Special File Handling**: Large files over 25MB properly managed with access notes
+
 ## Future Enhancements
-- Audio summary files for each lesson module
 - Interactive activities and assessments
 - Student progress tracking
 - Teacher resources and discussion guides
+- Video content integration
